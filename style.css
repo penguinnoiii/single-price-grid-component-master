@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-100: hsl(179, 62%, 43%);
+    --primary-200: hsl(71, 73%, 54%);
+    --neutral-100: hsl(204, 43%, 93%);
+    --neutral-200: hsl(218, 22%, 67%);
+}
+
+Body {
+    font-family: "Karla", sans-serif;
+    background-color: var(--neutral-100);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--neutral-100);
+}
+
+p {
+    line-height: 1.6;
+}
+
+.container {
+    margin: 30px;
+    max-width: 22rem;
+    border-radius: 12px;
+    box-shadow: 2px 2px 20px 2px #c1c8d7;
+}
+
+.herobanner {
+    background-color: #fff;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 30px 20px;
+    gap: 10px;
+}
+
+.spacing {
+    margin-bottom: 1.5rem;
+}
+
+.herobanner h1 {
+    color: var(--primary-100);
+}
+
+.herobanner h3 {
+    color: var(--primary-200);
+    margin-bottom: 1rem;
+}
+
+.herobanner p {
+    color: var(--neutral-200);
+}
+
+.height-section {
+    max-height: 17rem;
+}
+
+.subscription {
+    background-color: var(--primary-100);
+    padding: 20px 20px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.price h1 {
+    font-size: 2.5rem;
+    margin-right: 10px;
+}
+
+.price p {
+    opacity: 0.5;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    padding: 15px;
+    background-color: var(--primary-200);
+    box-shadow: 2px 2px 20px 2px #61abb1;
+    border-radius: 10px;
+    color: #FFF;
+}
+
+.contact {
+    background-color: hsla(179, 62%, 43%, 0.7);
+    padding: 20px 20px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.contact p {
+    font-weight: 100;
+}
+
+@media only screen and (min-width: 800px) {
+    .container {
+        min-width: 40rem;
+    }
+
+    .herobanner div {
+        max-width: 36rem;
+    }
+
+    .content {
+        display: flex;
+    }
+
+    .height-section {
+        min-width: 20rem;
+    }
+
+    .contact {
+        border-bottom-left-radius: 0px;
+    }
+
+    .subscription {
+        border-bottom-left-radius: 12px;
+    }
+}
